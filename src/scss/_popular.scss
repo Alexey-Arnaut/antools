@@ -1,0 +1,88 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 15px 0;
+}
+
+.popular__subtitle {
+    padding: 25px 0 100px;
+    max-width: 430px;
+    text-align: center;
+}
+
+.popular__items {
+    max-width: 1300px;
+    width: 100%;
+}
+
+.popular__item {
+    max-width: 400px;
+    min-height: 300px;
+    padding: 30px;
+    margin-right: 30px;
+    margin-bottom: 100px;
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+.popular__button {
+    color: $tertiary-color;
+    padding: 16px 40px;
+    border: 1px solid rgb($primary-color, 0.1);
+    margin-bottom: 100px;
+
+    &:hover {
+        border: 1px solid transparent;
+    }
+}
+
+.popular__logos {
+    width: 100%;
+    padding: 50px 80px;
+    background: rgb($quaternary-color, 0.2);
+    backdrop-filter: blur(50px);
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 150px;
+        height: 150px;
+        background: $tertiary-color;
+        filter: blur(50px);
+        left: -80px;
+        top: -80px;
+        border-radius: 50%;
+        z-index: -1;
+    }
+}
+
+.popular__logos-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: $primary-color;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.popular__logos-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular__logo {
+
+    &:hover {
+
+        path {
+            fill: $tertiary-color;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+$body-color: #1E252B;
+
+$color-white: #FFFFFF;
+$color-gray: #8A8E91;
+$color-orange: #FF6E30;
+$color-dark: #283036;
+
+$primary-color: $color-white;
+$secondary-color: $color-gray;
+$tertiary-color: $color-orange;
+$quaternary-color: $color-dark;
+
+@mixin button {
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.5s;
+    position: relative;
+}
+
+@mixin button--active {
+    color: $primary-color;
+    background: $tertiary-color;
+
+    &:hover {
+        background: darken($tertiary-color, 20%);
+    }
+}
+
+@mixin button--inactive {
+    color: $secondary-color;
+
+    &:hover {
+        color: $primary-color;
+        background: $tertiary-color;
+    }
+}
+
+@mixin title {
+    color: $primary-color;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+@mixin subtitle {
+    color: $secondary-color;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6em;
+}
