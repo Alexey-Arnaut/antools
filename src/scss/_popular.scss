@@ -21,7 +21,15 @@
     min-height: 300px;
     padding: 30px;
     margin: 15px 15px 100px 15px;
+}
 
+.popular__item--hidden {
+    min-height: 0;
+    height: 0;
+    width: 0;
+    position: absolute;
+    transform: translateY(-300px);
+    transition: 0.5s;
 }
 
 .popular__button {

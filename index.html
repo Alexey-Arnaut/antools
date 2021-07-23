@@ -20,7 +20,7 @@
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
-                        <a class="header__nav-link" href="#">Home</a>
+                        <a class="header__nav-link link" href="#home">Home</a>
                     </li>
                     <ul class="header__nav-menu">
                         <li class="header__nav-item">
@@ -64,7 +64,7 @@
 
         <main class="main">
 
-            <section class="offer">
+            <section class="offer" id="home">
                 <div class="offer__content">
                     <h1 class="offer__content-title">
                         Awesome tools for Designer & Developer<span>.</span>
@@ -84,7 +84,8 @@
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </span>
-                        <input class="offer__content-field" type="text" placeholder="find more than 430+ tools..." required>
+                        <input class="offer__content-field" type="text" placeholder="find more than 430+ tools..."
+                            required>
                         <button class="offer__content-button button button--active">Search</button>
                     </form>
                     <div class="offer__content-social">
@@ -619,7 +620,7 @@
                 </div>
                 <div class="newcomer__slider">
                     <div class="newcomer__slider-line">
-                        <div class="newcomer__slider-item">
+                        <div class="newcomer__slider-item" id="slide-1">
                             <div class="newcomer__slider-img">
                                 <span></span>
                                 <img src="./src/img/newcomer-tools/img-1.webp" alt="">
@@ -632,7 +633,7 @@
                                 commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
                             </p>
                         </div>
-                        <div class="newcomer__slider-item">
+                        <div class="newcomer__slider-item" id="slide-2">
                             <div class="newcomer__slider-img">
                                 <span></span>
                                 <img src="./src/img/newcomer-tools/img-1.webp" alt="">
@@ -645,7 +646,7 @@
                                 commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
                             </p>
                         </div>
-                        <div class="newcomer__slider-item">
+                        <div class="newcomer__slider-item" id="slide-3">
                             <div class="newcomer__slider-img">
                                 <span></span>
                                 <img src="./src/img/newcomer-tools/img-1.webp" alt="">
@@ -676,16 +677,18 @@
                         </button>
                     </div>
                     <div class="newcomer__slider-dots">
-                        <button class="newcomer__slider-dot newcomer__slider-dot--active"></button>
-                        <button class="newcomer__slider-dot"></button>
-                        <button class="newcomer__slider-dot"></button>
+                        <button class="newcomer__slider-dot newcomer__slider-dot--active"
+                            data-slide="#slide-1"></button>
+                        <button class="newcomer__slider-dot" data-slide="#slide-2"></button>
+                        <button class="newcomer__slider-dot" data-slide="#slide-3"></button>
                     </div>
                 </div>
             </section>
 
             <section class="section contributor">
                 <h2 class="contributor__title title">Become a contributor?</h2>
-                <p class="contributor__subtitle subtitle">Join us and get tips & tricks to become a great Designer and Developer</p>
+                <p class="contributor__subtitle subtitle">Join us and get tips & tricks to become a great Designer and
+                    Developer</p>
                 <form class="contributor__form" action="#">
                     <input class="contributor__form-field" type="email" placeholder="Enter your email..." required>
                     <button class="contributor__form-button button button--active">Join Us</button>
@@ -711,7 +714,8 @@
                         <a class="footer__nav-link" href="tel:621987463">+621987463</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a class="footer__nav-link" href="https://goo.gl/maps/HPV6fPGTSSEiX6KV6" target="_blank">M Building, No.10 A</a>
+                        <a class="footer__nav-link" href="https://goo.gl/maps/HPV6fPGTSSEiX6KV6" target="_blank">M
+                            Building, No.10 A</a>
                     </li>
                     <li class="footer__nav-item">
                         <a class="footer__nav-link" href="mailto:antools@awesome.com">antools@awesome.com</a>

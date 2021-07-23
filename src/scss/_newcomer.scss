@@ -36,18 +36,23 @@
 }
 
 .newcomer__slider {
+    max-width: 900px;
+    margin: 0 auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .newcomer__slider-line {
     max-width: 900px;
     width: 100%;
-    overflow: hidden;
     display: flex;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
 }
 
 .newcomer__slider-img {
@@ -198,6 +203,10 @@
         margin-bottom: 50px;
     }
 
+    .newcomer__slider {
+        max-width: 600px;
+    }
+
     .newcomer__slider-line {
         max-width: 600px;
     }
@@ -225,6 +234,10 @@
 }
 
 @media (max-width: 550px) {
+
+    .newcomer__slider {
+        max-width: 300px;
+    }
 
     .newcomer__slider-line {
         max-width: 300px;

@@ -1,5 +1,5 @@
 .header {
-    position: absolute;
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -7,6 +7,16 @@
     height: 100px;
     padding: 0 15px;
     transition: 0.5s;
+    z-index: 99;
+}
+
+.header--sticky {
+    background: $quaternary-color;
+    height: 60px;
+
+    .header__nav-submenu {
+        background: $quaternary-color;
+    }
 }
 
 .header--active {
@@ -15,6 +25,7 @@
     justify-content: center;
     align-items: center;
     transition: 0.5s;
+    background: $quaternary-color;
 
     .header__logo {
         margin-bottom: 20px;
