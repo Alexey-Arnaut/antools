@@ -285,6 +285,7 @@ select {
     outline: none;
     background: none;
     cursor: pointer;
+    padding: 0;
 }
 
 html {
@@ -303,8 +304,13 @@ body {
 }
 
 img {
+    max-width: 100%;
     border-style: none;
     pointer-events: none;
+}
+
+svg {
+    max-width: 100%;
 }
 
 * {
@@ -387,6 +393,7 @@ path {
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 8px;
+    line-height: 1.4em;
 }
 
 .item__price {
@@ -472,4 +479,18 @@ path {
 
 .subtitle {
     @include subtitle;
+}
+
+@media (max-width: 650px) {
+
+    .title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    
+    .item__title {
+        font-size: 18px;
+    }
 }

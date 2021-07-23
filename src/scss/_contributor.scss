@@ -35,3 +35,23 @@
 .contributor__form-button {
     width: 100%;
 }
+
+@media (max-width: 500px) {
+
+    .contributor__title  {
+        text-align: center;
+    }
+    
+    .contributor__form {
+        flex-direction: column;
+    }
+
+    .contributor__form-field {
+        margin-bottom: 15px;
+    }
+
+    .contributor__form-button {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+}
